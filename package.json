@@ -1,0 +1,19 @@
+{
+  "name": "exc2_ws_BOOKS",
+  "version": "1.0.0",
+  "description": "*Book:*\r     -index.js\r     -BookStock.json\r   *ws_index.js*",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ohadsas/exc2_ws_BOOKS.git"
+  },
+  "author": "ohad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ohadsas/exc2_ws_BOOKS/issues"
+  },
+  "homepage": "https://github.com/ohadsas/exc2_ws_BOOKS"
+}
