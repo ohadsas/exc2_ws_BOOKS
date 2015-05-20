@@ -1,8 +1,8 @@
- var BookList = require('./BookStock.json');
+ var BookList = require('./BookStock.json'); // jsonfile
 
  function Book() {
      this.books = [];
-     for (var i = 0; i < BookList.Book.length; i++) {
+     for (var i = 0; i < BookList.Book.length; i++) { // object fields
          this.books.push({
              "Name ": BookList.Book[i].Name,
              "ID ": BookList.Book[i].Id,
@@ -19,7 +19,7 @@
          console.log("There Are No Books Exist!!");
          return 0;
      }
-     console.log("Books In Stock :");
+     console.log("List Of Books In Stock :");
      for (var i = 0; i < BookList.Book.length; i++) {
          console.log("Name :" + BookList.Book[i].Name + " ");
          console.log("ID :" + BookList.Book[i].Id + " ");
@@ -30,7 +30,7 @@
 
  /*Get Best seller book by Month*/
  Book.prototype.getAllBestSellersByMonth = function(_month) {
- 	     console.log("===============" + "\n" + "Book by Month:" + _month + "\n" + "===============");
+ 	 console.log("====================" + "\n" + "Book by Month:" + _month + "\n" + "====================");
      var exist = false;
      var Stack = [];
      for (var i = 0; i < BookList.Book.length; i++) {
@@ -42,7 +42,6 @@
              exist = true;
              Stack.push(this.books[i]);
          }
-
      }
      if (exist == false) {
          console.log("No Matches found  for this Month Better Luck Next Time");
@@ -52,7 +51,7 @@
 
  /*Get Book By ID*/
  Book.prototype.getBooksById = function(_id) {
-     console.log("===============" + "\n" + "Book by Id:" + _id + "\n" + "===============" + &#178);
+     console.log("===============" + "\n" + "Book by Id:" + _id + "\n" + "===============");
      var exist = false;
      var Stack = [];
      for (var i = 0; i < BookList.Book.length; i++) {
@@ -90,4 +89,4 @@
      }
      return Stack;
  }
- module.exports = Book;
+ module.exports = Book; //expoting the module
